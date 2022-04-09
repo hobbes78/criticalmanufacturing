@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cmf.Common.TestUtilities" Version="2.3.128228" />
+    <PackageReference Include="Cmf.Dev.Mes.TestScenarios" Version="8.1.1.208" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Cmf.LightBusinessObjects">
+      <HintPath>..\..\..\..\..\..\GitReps\CREE\Libs\LBOs\NetStandard\Cmf.LightBusinessObjects.dll</HintPath>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+
+</Project>
