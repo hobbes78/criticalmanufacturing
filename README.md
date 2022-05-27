@@ -67,3 +67,11 @@ This utility determines the system's latest .NET Core 3.1.x version available, a
 ```powershell
 PS:\> .\UpdtNetCore3VersionRef.exe C:\GitReps\CREE\LocalEnvironment\BusinessTier\Cmf.Foundation.Services.HostService.dll.config
 ```
+
+# CleanCree.ps1
+
+This script can be run upon the start of each user story. It cleans the whole environment, rebuilds everything in a few minutes, launches the message bus, host and web server.
+
+# EquipCree.ps1
+
+This script loads the IoT Template shared workflows, a specific equipment's workflows and test master data, builds and creates a symlink to IoT custom utilities tasks. Experimental support for the creation of a new version of the controller (in **Created** state) is available.

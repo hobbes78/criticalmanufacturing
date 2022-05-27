@@ -45,7 +45,7 @@ if (Test-Path -Path $CreeRepo\Features\$EquipName\Data\MasterData\$EquipName.xls
     Write-Output ">>> Warning: this equipment uses an Excel file as master data! Please change it to JSON"
     Start-Process -Wait 'cmd' -ArgumentList "/c $CreeRepo\LocalEnvironment\MasterDataLoader\MasterData.exe $CreeRepo\Features\$EquipName\Data\MasterData\$EquipName.xlsx /DeeBasePath:$CreeRepo\Data\DEEs /AutomationWorkflowFilesBasePath:$CreeRepo\Features\$EquipName\Data\MasterData\AutomationWorkflowFiles /CreateInCollection:False"
 }
-exit
+
 Write-Output ">>> Loading test master data..."
 Start-Process -Wait 'cmd' -ArgumentList "/c $CreeRepo\LocalEnvironment\MasterDataLoader\MasterData.exe $CreeRepo\Tests\MasterData\MasterData-AutomationTests.json /DeeBasePath:$CreeRepo\Data\DEEs /CreateInCollection:False"
 
